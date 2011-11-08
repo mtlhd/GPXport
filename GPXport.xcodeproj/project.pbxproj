@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AF278F3E0F3C8FF20089563E /* GPXExportProgressPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF278F3D0F3C8FF20089563E /* GPXExportProgressPanel.xib */; };
+		AF278F780F3CB5190089563E /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = AF278F770F3CB5190089563E /* GPXWaypoint.m */; };
+		AF278F7D0F3CB8F20089563E /* GPXLink.m in Sources */ = {isa = PBXBuildFile; fileRef = AF278F7C0F3CB8F20089563E /* GPXLink.m */; };
+		AF278FCE0F3CC66E0089563E /* GPXGpxFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AF278FCD0F3CC66E0089563E /* GPXGpxFile.m */; };
+		AF2790270F3CD0C80089563E /* GPXExportProgressPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2790260F3CD0C80089563E /* GPXExportProgressPanelController.m */; };
+		AF27902F0F3CD3AA0089563E /* GPXMapWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF27902E0F3CD3AA0089563E /* GPXMapWindow.xib */; };
+		AF2790330F3CD6880089563E /* GPXMapWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2790320F3CD6880089563E /* GPXMapWindowController.m */; };
+		AF5EC5D30FAC916800CC2D66 /* image.icns in Resources */ = {isa = PBXBuildFile; fileRef = AF5EC5D20FAC916800CC2D66 /* image.icns */; };
+		AF76DD720F320DC2003B5344 /* GPXMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76DD710F320DC1003B5344 /* GPXMain.m */; };
+		AF76DD820F320E8A003B5344 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF76DD810F320E8A003B5344 /* AddressBook.framework */; };
+		AF794D1F0F61AE100046763B /* GPXSavePanelExtension.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF794D1E0F61AE100046763B /* GPXSavePanelExtension.xib */; };
+		AF806B7D0F38D032001F6BB1 /* GPXGeoCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AF806B7C0F38D032001F6BB1 /* GPXGeoCoder.m */; };
+		AF8296BA0F584DB000F61D50 /* GPXPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8296B90F584DB000F61D50 /* GPXPreferencesWindow.xib */; };
+		AF8296BE0F58536A00F61D50 /* GPXPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8296BD0F58536A00F61D50 /* GPXPreferencesWindowController.m */; };
+		AF88AC090F4DD937003A7575 /* GPXSavePanelExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF88AC080F4DD937003A7575 /* GPXSavePanelExtensionController.m */; };
+		AF8F09E10F735E6E00DD057D /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = AF8F09E00F735E6E00DD057D /* Credits.html */; };
+		AF8F0A600F736F5F00DD057D /* GPXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8F0A280F73683A00DD057D /* GPXDebug.m */; };
+		AF947FE10F44B11900B513BA /* GPXGoogleMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = AF947FE00F44B11900B513BA /* GPXGoogleMaps.m */; };
+		AF9480150F44B42F00B513BA /* GPXAddressBookEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9480140F44B42F00B513BA /* GPXAddressBookEntry.m */; };
+		AFA5BB490F4C9D6D0077D4D2 /* GPXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA5BB480F4C9D6D0077D4D2 /* GPXFile.m */; };
+		AFA5BB4E0F4C9EAF0077D4D2 /* GPXGarminPoiFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA5BB4D0F4C9EAF0077D4D2 /* GPXGarminPoiFile.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* GPXport_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXport_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* GPXport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPXport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF278F3D0F3C8FF20089563E /* GPXExportProgressPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPXExportProgressPanel.xib; sourceTree = "<group>"; };
+		AF278F760F3CB5190089563E /* GPXWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXWaypoint.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF278F770F3CB5190089563E /* GPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXWaypoint.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF278F7B0F3CB8F20089563E /* GPXLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXLink.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF278F7C0F3CB8F20089563E /* GPXLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXLink.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF278F7E0F3CB9FF0089563E /* GPXError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXError.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF278FCC0F3CC66E0089563E /* GPXGpxFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXGpxFile.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF278FCD0F3CC66E0089563E /* GPXGpxFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXGpxFile.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF2790250F3CD0C80089563E /* GPXExportProgressPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXExportProgressPanelController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF2790260F3CD0C80089563E /* GPXExportProgressPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXExportProgressPanelController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF27902E0F3CD3AA0089563E /* GPXMapWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPXMapWindow.xib; sourceTree = "<group>"; };
+		AF2790310F3CD6880089563E /* GPXMapWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXMapWindowController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF2790320F3CD6880089563E /* GPXMapWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXMapWindowController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF2791080F3CF7DD0089563E /* GPXGeoCodeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXGeoCodeClient.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF5EC5D20FAC916800CC2D66 /* image.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = image.icns; sourceTree = "<group>"; };
+		AF76DD700F320DC1003B5344 /* GPXMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXMain.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF76DD710F320DC1003B5344 /* GPXMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXMain.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF76DD810F320E8A003B5344 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		AF794D1E0F61AE100046763B /* GPXSavePanelExtension.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPXSavePanelExtension.xib; sourceTree = "<group>"; };
+		AF806B7B0F38D032001F6BB1 /* GPXGeoCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXGeoCoder.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF806B7C0F38D032001F6BB1 /* GPXGeoCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXGeoCoder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF8296B90F584DB000F61D50 /* GPXPreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPXPreferencesWindow.xib; sourceTree = "<group>"; };
+		AF8296BC0F58536A00F61D50 /* GPXPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXPreferencesWindowController.h; sourceTree = "<group>"; };
+		AF8296BD0F58536A00F61D50 /* GPXPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXPreferencesWindowController.m; sourceTree = "<group>"; };
+		AF88AC070F4DD937003A7575 /* GPXSavePanelExtensionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXSavePanelExtensionController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF88AC080F4DD937003A7575 /* GPXSavePanelExtensionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXSavePanelExtensionController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF8F09E00F735E6E00DD057D /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		AF8F0A270F73683A00DD057D /* GPXDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXDebug.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF8F0A280F73683A00DD057D /* GPXDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXDebug.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF947FDF0F44B11900B513BA /* GPXGoogleMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXGoogleMaps.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF947FE00F44B11900B513BA /* GPXGoogleMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXGoogleMaps.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AF9480130F44B42F00B513BA /* GPXAddressBookEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXAddressBookEntry.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AF9480140F44B42F00B513BA /* GPXAddressBookEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXAddressBookEntry.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AFA5BB470F4C9D6D0077D4D2 /* GPXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXFile.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AFA5BB480F4C9D6D0077D4D2 /* GPXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXFile.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AFA5BB4C0F4C9EAF0077D4D2 /* GPXGarminPoiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GPXGarminPoiFile.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AFA5BB4D0F4C9EAF0077D4D2 /* GPXGarminPoiFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GPXGarminPoiFile.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				AF76DD820F320E8A003B5344 /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6D1430F7146480024F155 /* Geo Coders */,
+				AFB6D1420F7146250024F155 /* File Formats */,
+				AFB6D1410F71460B0024F155 /* Window Controllers */,
+				AF76DD700F320DC1003B5344 /* GPXMain.h */,
+				AF76DD710F320DC1003B5344 /* GPXMain.m */,
+				AF278F760F3CB5190089563E /* GPXWaypoint.h */,
+				AF278F770F3CB5190089563E /* GPXWaypoint.m */,
+				AF278F7B0F3CB8F20089563E /* GPXLink.h */,
+				AF278F7C0F3CB8F20089563E /* GPXLink.m */,
+				AF278F7E0F3CB9FF0089563E /* GPXError.h */,
+				AF9480130F44B42F00B513BA /* GPXAddressBookEntry.h */,
+				AF9480140F44B42F00B513BA /* GPXAddressBookEntry.m */,
+				AF8F0A270F73683A00DD057D /* GPXDebug.h */,
+				AF8F0A280F73683A00DD057D /* GPXDebug.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* GPXport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* LatLongFinder */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = LatLongFinder;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* GPXport_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EC5D20FAC916800CC2D66 /* image.icns */,
+				AF8F09E00F735E6E00DD057D /* Credits.html */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				AF278F3D0F3C8FF20089563E /* GPXExportProgressPanel.xib */,
+				AF27902E0F3CD3AA0089563E /* GPXMapWindow.xib */,
+				AF8296B90F584DB000F61D50 /* GPXPreferencesWindow.xib */,
+				AF794D1E0F61AE100046763B /* GPXSavePanelExtension.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF76DD810F320E8A003B5344 /* AddressBook.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFB6D1410F71460B0024F155 /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF2790310F3CD6880089563E /* GPXMapWindowController.h */,
+				AF2790320F3CD6880089563E /* GPXMapWindowController.m */,
+				AF8296BC0F58536A00F61D50 /* GPXPreferencesWindowController.h */,
+				AF8296BD0F58536A00F61D50 /* GPXPreferencesWindowController.m */,
+				AF2790250F3CD0C80089563E /* GPXExportProgressPanelController.h */,
+				AF2790260F3CD0C80089563E /* GPXExportProgressPanelController.m */,
+				AF88AC070F4DD937003A7575 /* GPXSavePanelExtensionController.h */,
+				AF88AC080F4DD937003A7575 /* GPXSavePanelExtensionController.m */,
+			);
+			name = "Window Controllers";
+			sourceTree = "<group>";
+		};
+		AFB6D1420F7146250024F155 /* File Formats */ = {
+			isa = PBXGroup;
+			children = (
+				AFA5BB470F4C9D6D0077D4D2 /* GPXFile.h */,
+				AFA5BB480F4C9D6D0077D4D2 /* GPXFile.m */,
+				AFA5BB4C0F4C9EAF0077D4D2 /* GPXGarminPoiFile.h */,
+				AFA5BB4D0F4C9EAF0077D4D2 /* GPXGarminPoiFile.m */,
+				AF278FCC0F3CC66E0089563E /* GPXGpxFile.h */,
+				AF278FCD0F3CC66E0089563E /* GPXGpxFile.m */,
+			);
+			name = "File Formats";
+			sourceTree = "<group>";
+		};
+		AFB6D1430F7146480024F155 /* Geo Coders */ = {
+			isa = PBXGroup;
+			children = (
+				AF806B7B0F38D032001F6BB1 /* GPXGeoCoder.h */,
+				AF806B7C0F38D032001F6BB1 /* GPXGeoCoder.m */,
+				AF2791080F3CF7DD0089563E /* GPXGeoCodeClient.h */,
+				AF947FDF0F44B11900B513BA /* GPXGoogleMaps.h */,
+				AF947FE00F44B11900B513BA /* GPXGoogleMaps.m */,
+			);
+			name = "Geo Coders";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* GPXport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GPXport" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPXport;
+			productInstallPath = "$(HOME)/Applications";
+			productName = LatLongFinder;
+			productReference = 8D1107320486CEB800E47090 /* GPXport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GPXport" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* LatLongFinder */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* GPXport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				AF278F3E0F3C8FF20089563E /* GPXExportProgressPanel.xib in Resources */,
+				AF27902F0F3CD3AA0089563E /* GPXMapWindow.xib in Resources */,
+				AF8296BA0F584DB000F61D50 /* GPXPreferencesWindow.xib in Resources */,
+				AF794D1F0F61AE100046763B /* GPXSavePanelExtension.xib in Resources */,
+				AF8F09E10F735E6E00DD057D /* Credits.html in Resources */,
+				AF5EC5D30FAC916800CC2D66 /* image.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8F0A600F736F5F00DD057D /* GPXDebug.m in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				AF76DD720F320DC2003B5344 /* GPXMain.m in Sources */,
+				AF806B7D0F38D032001F6BB1 /* GPXGeoCoder.m in Sources */,
+				AF278F780F3CB5190089563E /* GPXWaypoint.m in Sources */,
+				AF278F7D0F3CB8F20089563E /* GPXLink.m in Sources */,
+				AF278FCE0F3CC66E0089563E /* GPXGpxFile.m in Sources */,
+				AF2790270F3CD0C80089563E /* GPXExportProgressPanelController.m in Sources */,
+				AF2790330F3CD6880089563E /* GPXMapWindowController.m in Sources */,
+				AF947FE10F44B11900B513BA /* GPXGoogleMaps.m in Sources */,
+				AF9480150F44B42F00B513BA /* GPXAddressBookEntry.m in Sources */,
+				AFA5BB490F4C9D6D0077D4D2 /* GPXFile.m in Sources */,
+				AFA5BB4E0F4C9EAF0077D4D2 /* GPXGarminPoiFile.m in Sources */,
+				AF88AC090F4DD937003A7575 /* GPXSavePanelExtensionController.m in Sources */,
+				AF8296BE0F58536A00F61D50 /* GPXPreferencesWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPXport_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = GPXport;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPXport_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = GPXport;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GPXport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GPXport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

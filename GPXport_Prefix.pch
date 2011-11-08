@@ -1,0 +1,14 @@
+//
+// Prefix header for all source files of the 'GPXport' target in the 'GPXport' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#ifdef DEBUG
+#import "GPXDebug.h"
+#define DEBUG_PRINT(x, ...) GPXLog(x, ##__VA_ARGS__)
+#else
+#define DEBUG_PRINT(x, ...) {}
+#endif
